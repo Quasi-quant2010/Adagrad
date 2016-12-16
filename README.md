@@ -1,0 +1,3 @@
+- ./L1 --train ~/data/libsvm/train.txt --test ~/data/libsvm/test.txt --step_size 1.0 --lambda 0.10 --convergence_rate 0.01 --max_iter 30 --mini_batch_size 5 --out_path ./ --out_fname L1
+- ./L2 --train ~/data/libsvm/heart_scale/train.dat --test ~/data/libsvm/heart_scale/train.dat --step_size 1.0 --lambda 0.0 --convergence_rate 0.01 --max_iter 100 --mini_batch_size 5 --out_path ./ --out_fname L2 && python graph.py
+- ./L2 --train ~/data/libsvm/australian/train.txt --test ~/data/libsvm/australian/train.txt --step_size 1.0 --lambda 0.1 --convergence_rate 0.1 --max_iter 100 --mini_batch_size 5 --out_path ./ --out_fname L2 && python graph.py
